@@ -82,6 +82,8 @@
 .footer-company{margin-top:8px}
 .footer-tagline{align-self:center;margin-top:-7px}
 @media(max-width:600px){.floating-inquiry{right:14px;bottom:14px}.floating-inquiry-button{font-size:12px;padding:8px 15px 8px 9px}.floating-inquiry-button img{width:30px;height:30px}}
+@media(max-width:800px){.about-mark img{width:145px;max-height:160px}}
+@media(max-width:600px){.about-mark img{width:120px;max-height:135px}}
 
 
 
