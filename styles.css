@@ -89,7 +89,7 @@
 @media(max-width:800px){.footer-brand-lockup{align-self:center;align-items:center;text-align:center}}
 .about-mark-caption .origin-caption-france:after{content:" ·"}
 .about-mark-caption .origin-caption-usa{margin-left:.7em}
-@media(max-width:600px){.about-mark-caption{display:flex;flex-direction:column;gap:3px;font-size:8px;letter-spacing:.12em;white-space:normal}.about-mark-caption .origin-caption-usa{margin-left:0}}
+@media(max-width:600px){.about-mark-caption{display:flex;flex-direction:column;gap:3px;font-size:8px;letter-spacing:.12em;white-space:normal}.about-mark-caption .origin-caption-france:after{content:""}.about-mark-caption .origin-caption-usa{margin-left:0}}
 
 
 
