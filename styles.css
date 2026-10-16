@@ -84,6 +84,9 @@
 @media(max-width:600px){.floating-inquiry{right:14px;bottom:14px}.floating-inquiry-button{font-size:12px;padding:8px 15px 8px 9px}.floating-inquiry-button img{width:30px;height:30px}}
 @media(max-width:800px){.about-mark img{width:145px;max-height:160px}}
 @media(max-width:600px){.about-mark img{width:120px;max-height:135px}}
+.footer-brand-lockup{display:flex;flex-direction:column;gap:2px}
+.footer-tagline{align-self:auto;margin-top:0;line-height:1.3}
+@media(max-width:800px){.footer-brand-lockup{align-self:center;align-items:center;text-align:center}}
 
 
 
