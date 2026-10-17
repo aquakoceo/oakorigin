@@ -91,5 +91,11 @@
 .about-mark-caption .origin-caption-usa{margin-left:.7em}
 @media(max-width:600px){.about-mark-caption{display:flex;flex-direction:column;gap:3px;font-size:8px;letter-spacing:.12em;white-space:normal}.about-mark-caption .origin-caption-france:after{content:""}.about-mark-caption .origin-caption-usa{margin-left:0}}
 
+.community-invite{padding:80px 0;background:#2b1b11;color:#f8f0e4}
+.community-invite-inner{display:flex;align-items:center;justify-content:space-between;gap:35px}
+.community-invite h2{font:400 clamp(29px,3vw,43px)/1.4 var(--serif);margin:0 0 12px}
+.community-invite p:not(.section-kicker){font-size:14px;color:#d7c7b4;line-height:1.8;margin:0}
+@media(max-width:600px){.community-invite{padding:62px 0}.community-invite-inner{align-items:start;flex-direction:column}}
+
 
 

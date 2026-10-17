@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#21160f">
+  <meta name="robots" content="noindex,nofollow">
+  <title>멤버 커뮤니티 | OAK ORIGIN</title>
+  <link rel="icon" href="assets/barrel-mark-gold.png" type="image/png">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="community.css">
+  <script type="module" src="community.js"></script>
+</head>
+<body class="community-page">
+  <a class="skip-link" href="#community-main">본문으로 바로가기</a>
+  <header class="community-header">
+    <div class="container community-header-inner">
+      <a class="community-brand" href="index.html" aria-label="오크오리진 홈"><img src="assets/barrel-mark-gold.png" alt=""><span><strong>OAK ORIGIN</strong><small>MEMBERS COMMUNITY</small></span></a>
+      <a class="community-back" href="index.html">브랜드 사이트로 <span aria-hidden="true">↗</span></a>
+    </div>
+  </header>
+  <main id="community-main" class="container">
+    <div class="community-title"><p class="section-kicker">THE OAK ORIGIN COMMUNITY</p><h1>함께 나누는<br><em>오크의 시간.</em></h1><p>경험을 나누고, 대화를 주제별로 다시 찾아보는 멤버 공간입니다.</p></div>
+    <p id="notice" class="community-notice" role="status" aria-live="polite"></p>
+
+    <section id="setup-panel" class="access-card" hidden><h2>커뮤니티 준비 중</h2><p>인증과 데이터 저장소 연결이 완료되면 이곳에서 멤버 대화를 시작할 수 있습니다.</p></section>
+
+    <section id="auth-panel" class="access-card" hidden aria-labelledby="auth-title">
+      <div><p class="section-kicker">MEMBER ACCESS</p><h2 id="auth-title">멤버 로그인</h2><p>승인된 멤버만 대화와 검색을 볼 수 있습니다. 새 계정은 운영자 승인 후 입장할 수 있습니다.</p></div>
+      <form id="auth-form"><label>이메일<input name="email" type="email" autocomplete="email" required></label><label>비밀번호<input name="password" type="password" autocomplete="current-password" minlength="8" required></label><div class="auth-actions"><button type="submit" name="mode" value="login">로그인</button><button type="button" id="signup-button" class="quiet-button">가입 신청</button></div></form>
+    </section>
+
+    <section id="pending-panel" class="access-card" hidden><h2>승인 대기 중입니다.</h2><p>운영자가 멤버십을 승인하면 커뮤니티를 이용할 수 있습니다.</p><button id="pending-logout" class="quiet-button" type="button">로그아웃</button></section>
+
+    <div id="community-app" hidden>
+      <div class="member-bar"><span id="member-label"></span><div><button id="admin-toggle" type="button" hidden>멤버 관리</button><button id="logout-button" type="button">로그아웃</button></div></div>
+      <div class="community-grid">
+        <aside class="community-sidebar" aria-label="대화 탐색">
+          <div class="sidebar-block"><h2>대화방</h2><div id="room-list" class="room-list"></div></div>
+          <div class="sidebar-block"><div class="sidebar-heading"><h2>주제별 대화</h2><button id="organize-button" type="button" hidden>AI 정리</button></div><button id="all-topics" class="topic-button selected" type="button">전체 대화</button><div id="topic-list"></div></div>
+        </aside>
+        <section class="conversation" aria-labelledby="room-heading">
+          <div class="conversation-head"><div><p class="section-kicker">MEMBER CHAT</p><h2 id="room-heading">대화방</h2><p id="room-description"></p></div><label class="search-label"><span class="visually-hidden">대화 검색</span><input id="search-input" type="search" placeholder="대화 검색" maxlength="80"></label></div>
+          <div id="topic-context" class="topic-context" hidden><div><span>TOPIC CONTEXT</span><h3 id="topic-heading"></h3><p id="topic-summary"></p></div><button id="clear-topic" type="button" aria-label="전체 대화 보기">×</button></div>
+          <div id="message-list" class="message-list" role="log" aria-live="polite" aria-relevant="additions"></div>
+          <form id="message-form" class="message-form"><label class="visually-hidden" for="message-input">메시지</label><textarea id="message-input" rows="2" maxlength="2000" placeholder="경험이나 질문을 나눠 주세요." required></textarea><div><span id="reply-context">전체 대화에 보내기</span><button type="submit">보내기 ↗</button></div></form>
+        </section>
+      </div>
+      <section id="admin-panel" class="admin-panel" hidden><div class="sidebar-heading"><div><p class="section-kicker">MEMBERSHIP</p><h2>멤버 관리</h2></div><button id="admin-close" type="button" aria-label="멤버 관리 닫기">×</button></div><p>가입 신청을 승인하고 역할을 지정할 수 있습니다.</p><div id="member-list"></div></section>
+    </div>
+  </main>
+  <footer class="community-footer"><div class="container">© OAK ORIGIN · 멤버 전용 공간</div></footer>
+</body>
+</html>
